@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obstacles</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 scroll-smooth">
+
+    <!-- Header -->
+    <header class="bg-slate-900 text-white p-6 shadow-lg sticky top-0 z-10 scroll-smooth">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center">
+            <img src="logo.jpeg" alt="Logo" class="h-10 mr-2">
+            <div class="text-3xl font-bold">Aerodrome Obstacles</div>
+          </div>
+          <nav>
+            <ul class="flex space-x-4">
+              <li><a href="Aerodrome.html" class="hover:text-sky-400">Home</a></li>
+              <li><a href="Methods.html" class="hover:text-sky-400">Methods</a></li>
+              <li><a href="Regulations.html" class="hover:text-sky-400">Regulations</a></li>
+              <li><a href="Casestudy.html" class="hover:text-sky-400">Case Studies</a></li>
+              <li><a href="Contactus.html" class="hover:text-sky-400">Contact</a></li>
+              <li><a href="aboutus.html" class="hover:text-sky-400">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="bg-slate-50 text-slate-800">
+        <div class="max-w-4xl mx-auto p-6 bg-green-100 shadow-md mt-10 rounded-lg">
+            <h1 class="text-3xl font-bold text-center mb-4 text-slate-900">Obstacle Limitation Surfaces (OLS)</h1>
+            <div class="mt-6">
+                <img src="obstacle.png" alt="Obstacle Limitation Surfaces" class="w-full rounded-lg shadow">
+            </div>
+            <div class="text-2xl font-semibold mt-6 text-slate-900">
+                Introduction to Obstacle Limitation Surfaces
+            </div>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                Obstacle Limitation Surfaces (OLS) are critical for ensuring the safety of aircraft operations around aerodromes. 
+                They define the maximum allowable heights for obstacles in the vicinity of an airport, helping to maintain 
+                clear flight paths for aircraft during takeoff and landing. Below are key considerations regarding OLS:
+            </p>
+
+            <div class="text-slate-900 text-2xl font-semibold mt-6">Key Components of OLS</div>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                OLS consists of several defined surfaces:
+            </p>
+            <ul class="list-disc list-inside mt-4 text-slate-700">
+                <li><strong>Approach Surface:</strong> A sloping surface extending from the end of the runway, defining the maximum height of obstacles as aircraft approach for landing.</li>
+                <li><strong>Departure Surface:</strong> A sloping surface extending from the end of the runway, defining the maximum height of obstacles as aircraft depart.</li>
+                <li><strong>Transitional Surfaces:</strong> Surfaces that connect the approach and departure surfaces to the horizontal surface, allowing for a smooth transition in height limits.</li>
+                <li><strong>Horizontal Surface:</strong> A flat surface at a specified height above the aerodrome, defining the maximum height of obstacles within the airport boundary.</li>
+            </ul>
+
+            <div class="text-slate-900 text-2xl font-semibold mt-6">Calculating Obstacle Heights</div>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                The maximum height of obstacles is determined based on the type of surface and the distance from the runway. 
+                Here’s a simplified calculation for determining the maximum height of an obstacle in the approach surface:
+            </p>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                <strong>Formula:</strong> 
+                <code class="text-sky-600">H = (A + B * D) / 2</code>
+            </p>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                Where:
+                <ul class="list-disc list-inside mt-2 text-slate-700">
+                    <li><strong>H:</strong> Maximum height of the obstacle (in feet).</li>
+                    <li><strong>A:</strong> Height of the runway threshold (in feet).</li>
+                    <li><strong>B:</strong> Slope ratio (e.g., 1:40 for a 1:40 slope).</li>
+                    <li><strong>D:</strong> Distance from the runway threshold (in feet).</li>
+                </ul>
+            </p>
+
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold text-sky-600">Example Calculation:</h3>
+                <p class="mt-4 text-slate-700 leading-relaxed">
+                    If the runway threshold is at 100 feet, the slope ratio is 1:40, and the distance from the threshold is 2000 feet:
+                </p>
+                <p class="mt-4 text-slate-700 leading-relaxed">
+                    <code class="text-sky-600">H = (100 + (1/40 * 2000)) / 2 = (100 + 50) / 2 = 75 feet</code>
+                </p>
+                <p class="mt-4 text-slate-700 leading-relaxed">
+                    Therefore, the maximum height of an obstacle at this distance would be 75 feet.
+                </p>
+            </div>
+
+            <div class="text-xl font-semibold mt-6 text-slate-900">Regulatory Frameworks</div>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                <li><strong>ICAO Annex 14:</strong> The International Civil Aviation Organization (ICAO) provides guidelines 
+                for OLS in Annex 14, which outlines the standards for aerodrome design and operations.</li>
+            </p>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                <li><strong>National Regulations:</strong> Many countries have their own regulations that align with ICAO 
+                standards, specifying the requirements for OLS and the management of obstacles around aerodromes.</li>
+            </p>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                <li><strong>Local Zoning Laws:</strong> Local governments may implement zoning laws that restrict the height 
+                of structures in areas surrounding aerodromes to comply with OLS requirements.</li>
+            </p>
+
+        </div>
+    </section>
+</body>
+</html>

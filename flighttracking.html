@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Track Analysis Method</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 scroll-smooth">
+
+  <!-- Header -->
+  <header class="bg-slate-900 text-white p-6 shadow-lg sticky top-0 z-10 scroll-smooth">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="logo.jpeg" alt="Aerodrome Obstacles Logo" class="h-10 mr-3 rounded" />
+        <div class="text-3xl font-bold">Aerodrome Obstacles</div>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="Aerodrome.html" class="hover:text-sky-400">Home</a></li>
+          <li><a href="Methods.html" class="hover:text-sky-400">Methods</a></li>
+          <li><a href="Regulations.html" class="hover:text-sky-400">Regulations</a></li>
+          <li><a href="Casestudy.html" class="hover:text-sky-400">Case Studies</a></li>
+          <li><a href="Contactus.html" class="hover:text-sky-400">Contact Us</a></li>
+          <li><a href="aboutus.html" class="hover:text-sky-400">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container mx-auto py-12 px-6">
+    <h2 class="text-4xl font-bold text-center mb-8 tracking-wide text-slate-900">Flight Track Analysis Methods</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4 text-sky-600">1. Data Collection</h3>
+        <p class="leading-relaxed text-slate-700">Flight data can be collected from various sources, including:</p>
+        <ul class="list-disc list-inside mt-2 text-slate-600">
+          <li>Flight tracking APIs (e.g., AviationStack, FlightRadar24)</li>
+          <li>ADS-B (Automatic Dependent Surveillance–Broadcast) data</li>
+          <li>Air traffic control data</li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4 text-sky-600">2. Data Processing</h3>
+        <p class="leading-relaxed text-slate-700">Once the data is collected, it needs to be processed for analysis:</p>
+        <ul class="list-disc list-inside mt-2 text-slate-600">
+          <li>Data cleaning: Removing duplicates and correcting errors.</li>
+          <li>Data transformation: Converting timestamps to a standard format (e.g., UTC).</li>
+          <li>Data aggregation: Summarizing data over specific time intervals or geographical areas.</li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4 text-sky-600">3. Data Visualization</h3>
+        <p class="leading-relaxed text-slate-700">Visualizing flight data helps in understanding patterns and trends:</p>
+        <ul class="list-disc list-inside mt-2 text-slate-600">
+          <li>Mapping flight paths on maps using Leaflet.js or Google Maps API.</li>
+          <li>Creating time series graphs to analyze flight frequency over time.</li>
+          <li>Using scatter plots to visualize altitude and speed data.</li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4 text-sky-600">4. Reporting & Decision Making</h3>
+        <p class="leading-relaxed text-slate-700">Insights from analysis can be compiled into reports to inform stakeholders:</p>
+        <ul class="list-disc list-inside mt-2 text-slate-600">
+          <li>Airlines for operational improvements.</li>
+          <li>Regulatory bodies for policy-making.</li>
+          <li>Airport authorities for infrastructure planning.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="mt-12 text-center">
+      <h3 class="text-2xl font-semibold text-sky-600">Real-Time Flight Tracking</h3>
+      <p class="leading-relaxed text-slate-700">Visit <a href="https://www.flightradar24.com" target="_blank" class="text-sky-500 underline hover:text-sky-600 transition">FlightRadar24</a> to view live flight data.</p>
+      <div class="text-center mt-8">
+        <a href="Methods.html" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-6 rounded-lg transition">
+          ← Back to Methods
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-slate-900 text-slate-300 py-10 mt-16">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 space-y-4 md:space-y-0">
+      <div class="text-white font-semibold text-lg">Aerodrome Obstacles</div>
+     
+    </div>
+    <div class="mt-6 text-center text-sm text-slate-500">
+      &copy; 2025 Aerodrome Obstacles. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
